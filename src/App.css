@@ -1,0 +1,239 @@
+/* Overall page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #4b3f91, #6d5acb);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Order page */
+.order-page {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+/* Order card */
+.order-card {
+  width: 500px;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.order-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+.order-card label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Inputs and dropdown */
+.order-card input,
+.order-card select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* Place Order button */
+.order-card button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #5546b8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-card button:hover {
+  background: #403399;
+}
+
+/* Order Preview */
+.order-preview {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+}
+
+.order-preview h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.order-preview p {
+  margin: 10px 0;
+}
+
+.order-preview hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 18px 0;
+}
+
+.order-preview h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.history-button {
+  display: block;
+  margin: 0 auto 25px;
+  padding: 12px 25px;
+  background: #4b3f72;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.history-button:hover {
+  background: #352d55;
+}
+
+.history-table-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th {
+  background: #4b3f72;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+.history-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.history-table tbody tr:hover {
+  background: #f5f3ff;
+}
+
+/* MENU PAGE */
+
+.menu-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.menu-container h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.food-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.food-card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.food-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #5546b8;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.food-card button:hover {
+  background: #403399;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .food-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .food-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-container {
+    padding: 25px;
+  }
+}
